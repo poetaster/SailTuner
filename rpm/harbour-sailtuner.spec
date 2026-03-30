@@ -14,7 +14,7 @@ Name:       harbour-sailtuner
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 
 Summary:    Chromatic tuner
-Version:    0.1
+Version:    0.1.2
 Release:    1
 Group:      Qt/Qt
 License:    GPL
