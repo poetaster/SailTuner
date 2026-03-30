@@ -32,6 +32,25 @@ BuildRequires:  desktop-file-utils
 
 %description
 Instrumental multi-temperament chromatic tuner
+%if "%{?vendor}" == "chum"
+PackageName: SailTuner
+Type: desktop-application
+Categories:
+ - Audio
+PackagerName: Mark Washeim (poetaster)
+Custom:
+ - Repo: https://github.com/poetaster/harbour-sailtuner
+PackageIcon: https://raw.githubusercontent.com/poetaster/SailTuner/master/icons/256x256/harbour-sailtuner.png
+Url:
+ - Bugtracker: https://github.com/poetaster/SailTuner/issues
+Screenshots:
+ - https://raw.githubusercontent.com/poetaster/SailTuner/master/images/screenshots/20160115211525.png
+ - https://raw.githubusercontent.com/poetaster/SailTuner/master/images/screenshots/20160115211610.png
+ - https://raw.githubusercontent.com/poetaster/SailTuner/master/images/screenshots/20160115211636.png
+Links:
+  Homepage: https://github.com/poetaster/SailTuner
+  Bugtracker: https://github.com/poetaster/SailTuner/issues
+%endif
 
 %prep
 %setup -q -n %{name}-%{version}
