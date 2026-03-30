@@ -1,6 +1,7 @@
 QT += qml quick gui multimedia dbus
 TARGET = harbour-sailtuner
 
+
 CONFIG += c++11 qt link_pkgconfig sailfishapp sailfishapp_no_deploy_qml
 
 DEFINES += TARGET=\""$(TARGET")\"
@@ -13,7 +14,10 @@ SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
 RESOURCES += \
 	qml/sailfish.qrc \
-	data/temperaments.qrc
+        data/temperaments.qrc
+
+DISTFILES += \
+        rpm/harbour-sailtuner.spec
 
 SOURCES += \
 	src/sailfish.cpp \
