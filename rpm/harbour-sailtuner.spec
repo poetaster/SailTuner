@@ -14,7 +14,7 @@ Name:       harbour-sailtuner
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 
 Summary:    Chromatic tuner
-Version:    0.1.2
+Version:    0.2.0
 Release:    1
 Group:      Qt/Qt
 License:    GPL
@@ -28,7 +28,6 @@ BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(Qt5Multimedia)
-BuildRequires:  pkgconfig(libpulse-simple)
 BuildRequires:  pkgconfig(audioresource)
 BuildRequires:  desktop-file-utils
 BuildRequires:  qt5-qttools-linguist

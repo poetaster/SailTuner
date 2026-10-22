@@ -8,9 +8,9 @@ QT += dbus
 
 DEFINES += TARGET=\""$(TARGET")\"
 
-## see rpm/Makefile for installing libpulse and libaudioresource
+## see rpm/Makefile for installing audioresource
 
-PKGCONFIG += libpulse-simple audioresource
+PKGCONFIG += audioresource
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
